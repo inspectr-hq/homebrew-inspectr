@@ -9,16 +9,16 @@ class Inspectr < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/inspectr-hq/inspectr/releases/download/v0.2.0/inspectr_v0.2.0_Darwin_x86_64.tar.gz"
-      sha256 "71225af16f3ff4d4ea8f02ccd20ceeeec5d8f2e3b809376b260332fcf697488e"
+      url "https://github.com/inspectr-hq/inspectr/releases/download/v0.2.0/inspectr_0.2.0_Darwin_x86_64.tar.gz"
+      sha256 "f1967c3f74a99432aae50679912f2047d445db54ca2aef3300199dc53b6615e1"
 
       def install
         bin.install "inspectr"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/inspectr-hq/inspectr/releases/download/v0.2.0/inspectr_v0.2.0_Darwin_arm64.tar.gz"
-      sha256 "a078850200ebf2976182e7b537a13e95af51e808e5f080143bc17e910e42f2b5"
+      url "https://github.com/inspectr-hq/inspectr/releases/download/v0.2.0/inspectr_0.2.0_Darwin_arm64.tar.gz"
+      sha256 "8851f0159374a1d221918d1c2dfa27a087e393ccd9e6922369b4fdf507e28007"
 
       def install
         bin.install "inspectr"
@@ -29,8 +29,8 @@ class Inspectr < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/inspectr-hq/inspectr/releases/download/v0.2.0/inspectr_v0.2.0_Linux_x86_64.tar.gz"
-        sha256 "f9d6fffb428617ab7154ffae433844e50bd3f6ecb4035f63f8b64f24d589c761"
+        url "https://github.com/inspectr-hq/inspectr/releases/download/v0.2.0/inspectr_0.2.0_Linux_x86_64.tar.gz"
+        sha256 "3cc6589096802ebd2ef55dd6dec142808f25b8e8648119a42cf7c66b71e55370"
 
         def install
           bin.install "inspectr"
@@ -39,8 +39,8 @@ class Inspectr < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/inspectr-hq/inspectr/releases/download/v0.2.0/inspectr_v0.2.0_Linux_arm64.tar.gz"
-        sha256 "f85e22e2a98966ab197acd9490816e8c5f3429ee26a780f4cc2b909250d8481f"
+        url "https://github.com/inspectr-hq/inspectr/releases/download/v0.2.0/inspectr_0.2.0_Linux_arm64.tar.gz"
+        sha256 "6b2f223b7b2ade94f3f65ca5041e62b935386dbb7f38087c101a552dea1d8d4e"
 
         def install
           bin.install "inspectr"
