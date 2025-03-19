@@ -10,7 +10,7 @@ class Inspectr < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/inspectr-hq/inspectr/releases/download/v0.2.5/inspectr_0.2.5_darwin_amd64.tar.gz"
-      sha256 "fdbc05ae4e303139144ebab1c86ad6afe3fd34561618b86171827e7d15b7d6b1"
+      sha256 "863e6fbfb67af92c0ff094774aadf38ad946b6700907334ca843f299d985862a"
 
       def install
         bin.install "inspectr"
@@ -18,7 +18,7 @@ class Inspectr < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/inspectr-hq/inspectr/releases/download/v0.2.5/inspectr_0.2.5_darwin_arm64.tar.gz"
-      sha256 "f2d6a188f716bbc331a5aa7cacd6e50746e361c596a3fbf42e152706c9d74f84"
+      sha256 "71009779fa356328bbd0d272cf0aae661a48e371e88b06e68da79479cfdade8d"
 
       def install
         bin.install "inspectr"
@@ -30,7 +30,7 @@ class Inspectr < Formula
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/inspectr-hq/inspectr/releases/download/v0.2.5/inspectr_0.2.5_linux_amd64.tar.gz"
-        sha256 "05fce5984b356fec888f4692ff4b537760533cbd0114adcb844c60c310008c02"
+        sha256 "dfd94cad0ea0b0ed988f7738874db245cb97933f69c57ab550aa3aaf75cef193"
 
         def install
           bin.install "inspectr"
@@ -40,7 +40,7 @@ class Inspectr < Formula
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/inspectr-hq/inspectr/releases/download/v0.2.5/inspectr_0.2.5_linux_arm64.tar.gz"
-        sha256 "e522a1b1ba940f5d3809d99321a4ac5e62d18562b787bb08b5e10afc6d34f21d"
+        sha256 "494a71252016ac6818df9502c34355be31f903f25d9c2161f70be500b43eee62"
 
         def install
           bin.install "inspectr"
