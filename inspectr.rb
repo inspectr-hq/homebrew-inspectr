@@ -5,20 +5,20 @@
 class Inspectr < Formula
   desc "Inspectr – Simplifying API and Webhook debugging!"
   homepage "https://github.com/inspectr-hq/inspectr"
-  version "0.2.5"
+  version "0.3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/inspectr-hq/inspectr/releases/download/v0.2.5/inspectr_0.2.5_darwin_amd64.tar.gz"
-      sha256 "863e6fbfb67af92c0ff094774aadf38ad946b6700907334ca843f299d985862a"
+      url "https://github.com/inspectr-hq/inspectr/releases/download/v0.3.0/inspectr_0.3.0_darwin_amd64.tar.gz"
+      sha256 "d4dda3261487754b8ccbb9b60a17929fb60fe7e20de39e4e37a4c731a24e8d9a"
 
       def install
         bin.install "inspectr"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/inspectr-hq/inspectr/releases/download/v0.2.5/inspectr_0.2.5_darwin_arm64.tar.gz"
-      sha256 "71009779fa356328bbd0d272cf0aae661a48e371e88b06e68da79479cfdade8d"
+      url "https://github.com/inspectr-hq/inspectr/releases/download/v0.3.0/inspectr_0.3.0_darwin_arm64.tar.gz"
+      sha256 "c989b5425abcf09d8b7ec37936632f5564254fab669abafb11e2adf55c123e39"
 
       def install
         bin.install "inspectr"
@@ -29,8 +29,8 @@ class Inspectr < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/inspectr-hq/inspectr/releases/download/v0.2.5/inspectr_0.2.5_linux_amd64.tar.gz"
-        sha256 "dfd94cad0ea0b0ed988f7738874db245cb97933f69c57ab550aa3aaf75cef193"
+        url "https://github.com/inspectr-hq/inspectr/releases/download/v0.3.0/inspectr_0.3.0_linux_amd64.tar.gz"
+        sha256 "56392e023ccca98fa5cf1467565064e2649240b2218b110ac15f171fc84b4264"
 
         def install
           bin.install "inspectr"
@@ -39,8 +39,8 @@ class Inspectr < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/inspectr-hq/inspectr/releases/download/v0.2.5/inspectr_0.2.5_linux_arm64.tar.gz"
-        sha256 "494a71252016ac6818df9502c34355be31f903f25d9c2161f70be500b43eee62"
+        url "https://github.com/inspectr-hq/inspectr/releases/download/v0.3.0/inspectr_0.3.0_linux_arm64.tar.gz"
+        sha256 "d24bedbf90b020ee723577d4c0b905e93657bc76a180e011b63ef2e41073dad6"
 
         def install
           bin.install "inspectr"
