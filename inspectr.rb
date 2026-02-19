@@ -5,20 +5,20 @@
 class Inspectr < Formula
   desc "Inspectr – Simplifying API and Webhook debugging!"
   homepage "https://github.com/inspectr-hq/inspectr"
-  version "1.8.0"
+  version "1.8.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/inspectr-hq/inspectr/releases/download/v1.8.0/inspectr_1.8.0_darwin_amd64.tar.gz"
-      sha256 "8d987766e47b81aaf501abce9433120a7769b6247dad4ee813b171b709755f26"
+      url "https://github.com/inspectr-hq/inspectr/releases/download/v1.8.1/inspectr_1.8.1_darwin_amd64.tar.gz"
+      sha256 "8879c414e5ce03b027d0d308fd8f15b4755f57d25ca0d12a01829fc88cbd5480"
 
       def install
         bin.install "inspectr"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/inspectr-hq/inspectr/releases/download/v1.8.0/inspectr_1.8.0_darwin_arm64.tar.gz"
-      sha256 "19feca1ad0c5ae5283117da5f1263dd89e8818ad2d528c2e08a5d186252380ae"
+      url "https://github.com/inspectr-hq/inspectr/releases/download/v1.8.1/inspectr_1.8.1_darwin_arm64.tar.gz"
+      sha256 "f92b2103cd4dc760ea95fddd47e3b593bfbd3a70dd32afc782961afeb6ef72ff"
 
       def install
         bin.install "inspectr"
@@ -28,15 +28,15 @@ class Inspectr < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/inspectr-hq/inspectr/releases/download/v1.8.0/inspectr_1.8.0_linux_amd64.tar.gz"
-      sha256 "581e629e2317250052864fadfd2ed7f8344a52e30da12efaae368050e4d10185"
+      url "https://github.com/inspectr-hq/inspectr/releases/download/v1.8.1/inspectr_1.8.1_linux_amd64.tar.gz"
+      sha256 "1b4561bd741656d456cc67b96debe8f8b1e81c046ad8dae0de3715aa28e5d1fd"
       def install
         bin.install "inspectr"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/inspectr-hq/inspectr/releases/download/v1.8.0/inspectr_1.8.0_linux_arm64.tar.gz"
-      sha256 "f8f69c0d719cc7d8ac096e88a63a41baa947b106085baf926c6b036629c9facc"
+      url "https://github.com/inspectr-hq/inspectr/releases/download/v1.8.1/inspectr_1.8.1_linux_arm64.tar.gz"
+      sha256 "766c9ceab4ac4295156a8291f922b5368b1b161f3c9f163dbb68f957bfdbd20a"
       def install
         bin.install "inspectr"
       end
