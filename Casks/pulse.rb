@@ -1,8 +1,8 @@
 cask "pulse" do
-  version "1.1.0"
-  sha256 "11dce1de1202abdb307b117573ffb60979a0e270d169feadab51260d4522cdda"
+  version "1.1.1"
+  sha256 "0f2d682888be8e6b12baf843941b57f30e7f93fdbda34f3720e3ad8c97942a35"
 
-  url "https://github.com/inspectr-hq/pulse-app/releases/download/v1.1.0/Pulse-1.1.0.dmg"
+  url "https://github.com/inspectr-hq/pulse-app/releases/download/v1.1.1/Pulse-1.1.1.dmg"
   name "Pulse"
   desc "Inspectr Pulse App - Mac menu bar app for monitoring APIs, MCP servers, websites and health endpoints"
   homepage "https://github.com/inspectr-hq/pulse-app"
