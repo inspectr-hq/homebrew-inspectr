@@ -1,8 +1,8 @@
 cask "claude-mcp-switch" do
-  version ".1.1.0"
-  sha256 "095cb4677a480a693b57dc7df1f0fd6b32e1172a6e3caa7d6a552567efcd981b"
+  version "1.1.1"
+  sha256 "725ee7e8f9791c74d7cbfe675e5e6d468b1bd887aa20ae93ea3be72535355e10"
 
-  url "https://github.com/inspectr-hq/claude-mcp-switch/releases/download/v.1.1.0/ClaudeMcpSwitch-.1.1.0.dmg"
+  url "https://github.com/inspectr-hq/claude-mcp-switch/releases/download/v1.1.1/ClaudeMcpSwitch-1.1.1.dmg"
   name "Claude MCP Switch"
   desc "macOS menu bar app for managing Claude Desktop MCP servers"
   homepage "https://github.com/inspectr-hq/claude-mcp-switch"
